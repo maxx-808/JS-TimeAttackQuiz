@@ -1,13 +1,37 @@
-#header {
-    margin-top: 15px;
-    font-size: 20px;
-}
 
 .conatiner {
     text-align: center;
 }
 
+.hide {
+    display:none;
+}
+
+#header {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
 #start {
     background-color: lightblue;
     color: black;
+}
+
+#time-identifier {
+    margin-right: 20px;
+}
+
+#time-body {
+    margin-top: -25px;
+}
+
+#rules-list {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#optionA,
+#optionB,
+#optionC {
+    border: 2px;
 }

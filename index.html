@@ -2,56 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--Bootstrap CSS link-->
     <link rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
     crossorigin="anonymous">
+
     <!--Personal CSS link-->
     <link rel="stylesheet" href="./style.css">
+
     <title>Javascript Time Attack Quiz!</title>
 </head>
+
 <body>
+
+
+
+
     <!--Header Bar-->
     <ul class="nav nav-pills" id="header">
         <li role="presentation">
             <div class="container">
-                <a id="veiw-highscores" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    Veiw Highscores
+                <a id="veiw-highscores" href="#" role="button">
+                    Veiw Highscores: <span id="highscores"></span>
                 </a>
             </div>
         </li>
-        <li>
-            <span id="timer">
-                Time left: <span id="time">60</span>
-            </span>
+        <li id="time-identifier">
+            Time:
+        </li>
+        <li id="time-body">
+            <h1 id="timer"></h1>
         </li>
     </ul>
 
     <!--start quiz body-->
-    <div class="container">
-        <h1>JavaScript Time Attack Quiz!</h1>
+    <div class="container" id="start-page">
+        <h1>Javascript Time Attack Quiz!</h1>
         <h2>Rules:</h2>
-        <ol>
-            <li>
-                60 seconds to answer 7 questions
-            </li>
-            <li>
-                every wrong answer minuses 5 seconds
-            </li>
-            <li>
-                quiz is finished when all questions answered or time is 0
-            </li>
-            <li>
-                write your initials with your score
-            </li>
+        <ol id="rules-list">
+            <li>60 seconds to answer 7 questions</li>
+            <li>every wrong answer takes away 5 seconds</li>
+            <li>quiz is finished when all questions are answered correctly or time is down to 0</li>
+            <li>if you complete the quiz, write your initials with your score to save</li>
         </ol>
-        <button id="start" type="button">Start Quiz</button>
+        <div id="start-button" type="button">Start Quiz</div>
     </div>
 
+    <!--question pages-->
+    <div class="conatiner hide" id="question-page">
+        <h1 id="question"></h1>
+        <ul>
+            <li id="optionA" data-answer="A"></li>
+            <br>
+            <li id="optionB" data-answer="B"></li>
+            <br>
+            <li id="optionC" data-answer="C"></li>
+        </ul>
+    </div>
 
     <!--Personal JavaScript source-->
     <script src="./app.js"></script>
 </body>
+
 </html>
