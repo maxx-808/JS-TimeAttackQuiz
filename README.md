@@ -35,3 +35,4 @@ If you fail to answer correctly before time runs out, you will get this and the 
 
 URLS:
 https://github.com/maxx-808/JS-TimeAttackQuiz.git
+https://maxx-808.github.io/JS-TimeAttackQuiz/
