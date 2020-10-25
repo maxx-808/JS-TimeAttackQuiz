@@ -17,16 +17,12 @@
 </head>
 
 <body>
-
-
-
-
     <!--Header Bar-->
     <ul class="nav nav-pills" id="header">
         <li role="presentation">
             <div class="container">
-                <a id="veiw-highscores" href="#" role="button">
-                    Veiw Highscores: <span id="highscores"></span>
+                <a id="veiw-highscores" role="button">
+                    Veiw Highscores
                 </a>
             </div>
         </li>
@@ -34,9 +30,20 @@
             Time:
         </li>
         <li id="time-body">
-            <h1 id="timer"></h1>
+            <h1 class="hide" id="timer"></h1>
         </li>
     </ul>
+
+    <!--highscore page-->
+    <div class="container hide" id="highscore-page">
+        <h1>Highscores</h1>
+        <ol id="score-list">
+            <li><span id="score1"></span></li>
+            <li><span id="score2"></span></li>
+            <li><span id="score3"></span></li>
+        </ol>
+        <button id="home">Home</button>
+    </div>
 
     <!--start quiz body-->
     <div class="container" id="start-page">
@@ -48,7 +55,7 @@
             <li>quiz is finished when all questions are answered correctly or time is down to 0</li>
             <li>if you complete the quiz, write your initials with your score to save</li>
         </ol>
-        <div id="start-button" type="button">Start Quiz</div>
+        <button id="start-button" type="button">Start Quiz</button>
     </div>
 
     <!--question pages-->
