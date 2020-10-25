@@ -32,3 +32,6 @@ however I was not able to get past this part.
 
 If you fail to answer correctly before time runs out, you will get this and the page will reload
 ![webAPI homework7](https://user-images.githubusercontent.com/69176601/97097584-ee1e0080-1615-11eb-99e3-d60771ba20f8.jpg)
+
+URLS:
+https://github.com/maxx-808/JS-TimeAttackQuiz.git
